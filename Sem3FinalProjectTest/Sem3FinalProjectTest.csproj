@@ -129,6 +129,7 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\TuansController.cs" />
     <Compile Include="Data\Sem3FinalProjectTestContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -141,9 +142,14 @@
     <Compile Include="Migrations\202004071458124_Add-Category.Designer.cs">
       <DependentUpon>202004071458124_Add-Category.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004081412530_AddTuan.cs" />
+    <Compile Include="Migrations\202004081412530_AddTuan.Designer.cs">
+      <DependentUpon>202004081412530_AddTuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Tuan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +198,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Tuans\Create.cshtml" />
+    <Content Include="Views\Tuans\Delete.cshtml" />
+    <Content Include="Views\Tuans\Details.cshtml" />
+    <Content Include="Views\Tuans\Edit.cshtml" />
+    <Content Include="Views\Tuans\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004071458124_Add-Category.resx">
       <DependentUpon>202004071458124_Add-Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004081412530_AddTuan.resx">
+      <DependentUpon>202004081412530_AddTuan.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

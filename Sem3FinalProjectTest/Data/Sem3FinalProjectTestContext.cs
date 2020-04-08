@@ -22,5 +22,7 @@ namespace Sem3FinalProjectTest.Data
         public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Product> Products { get; set; }
 
         public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Tuan> Tuans { get; set; }
     }
 }
