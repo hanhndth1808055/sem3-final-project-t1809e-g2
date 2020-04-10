@@ -128,6 +128,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NamsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Data\Sem3FinalProjectTestContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -141,8 +142,13 @@
     <Compile Include="Migrations\202004071458124_Add-Category.Designer.cs">
       <DependentUpon>202004071458124_Add-Category.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004081340265_AddNam.cs" />
+    <Compile Include="Migrations\202004081340265_AddNam.Designer.cs">
+      <DependentUpon>202004081340265_AddNam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Nam.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -192,6 +198,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Nams\Create.cshtml" />
+    <Content Include="Views\Nams\Delete.cshtml" />
+    <Content Include="Views\Nams\Details.cshtml" />
+    <Content Include="Views\Nams\Edit.cshtml" />
+    <Content Include="Views\Nams\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004071458124_Add-Category.resx">
       <DependentUpon>202004071458124_Add-Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004081340265_AddNam.resx">
+      <DependentUpon>202004081340265_AddNam.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
