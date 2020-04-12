@@ -51,9 +51,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -121,6 +118,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -129,19 +131,21 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NamsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\TuansController.cs" />
     <Compile Include="Data\Sem3FinalProjectTestContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004111518509_Fixing.cs" />
-    <Compile Include="Migrations\202004111518509_Fixing.Designer.cs">
-      <DependentUpon>202004111518509_Fixing.cs</DependentUpon>
+    <Compile Include="Migrations\202004121449125_Fixing-all.cs" />
+    <Compile Include="Migrations\202004121449125_Fixing-all.Designer.cs">
+      <DependentUpon>202004121449125_Fixing-all.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Hieu.cs" />
     <Compile Include="Models\Nam.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Tuan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +194,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Tuans\Create.cshtml" />
+    <Content Include="Views\Tuans\Delete.cshtml" />
+    <Content Include="Views\Tuans\Details.cshtml" />
+    <Content Include="Views\Tuans\Edit.cshtml" />
+    <Content Include="Views\Tuans\Index.cshtml" />
     <Content Include="Views\Hieu\Create.cshtml" />
     <Content Include="Views\Hieu\Delete.cshtml" />
     <Content Include="Views\Hieu\Details.cshtml" />
@@ -218,8 +227,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004111518509_Fixing.resx">
-      <DependentUpon>202004111518509_Fixing.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004121449125_Fixing-all.resx">
+      <DependentUpon>202004121449125_Fixing-all.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

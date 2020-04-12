@@ -26,5 +26,7 @@ namespace Sem3FinalProjectTest.Data
         public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Nam> Nams { get; set; }
 
         public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Hieu> Hieux { get; set; }
+
+        public System.Data.Entity.DbSet<Sem3FinalProjectTest.Models.Tuan> Tuans { get; set; }
     }
 }

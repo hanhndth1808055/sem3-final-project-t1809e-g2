@@ -3,7 +3,7 @@ namespace Sem3FinalProjectTest.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Fixing : DbMigration
+    public partial class Fixingall : DbMigration
     {
         public override void Up()
         {
@@ -44,10 +44,20 @@ namespace Sem3FinalProjectTest.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Tuans",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
         {
+            DropTable("dbo.Tuans");
             DropTable("dbo.Products");
             DropTable("dbo.Nams");
             DropTable("dbo.Hieux");

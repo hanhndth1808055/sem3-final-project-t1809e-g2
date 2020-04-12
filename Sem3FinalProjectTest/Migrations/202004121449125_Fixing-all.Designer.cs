@@ -7,13 +7,13 @@ namespace Sem3FinalProjectTest.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Fixing : IMigrationMetadata
+    public sealed partial class Fixingall : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Fixing));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Fixingall));
         
         string IMigrationMetadata.Id
         {
-            get { return "202004111518509_Fixing"; }
+            get { return "202004121449125_Fixing-all"; }
         }
         
         string IMigrationMetadata.Source
